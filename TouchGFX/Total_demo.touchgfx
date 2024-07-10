@@ -1,0 +1,1300 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "HomePage",
+        "Components": [
+          {
+            "Type": "AnimatedImage",
+            "Name": "animatedImage1",
+            "Width": 321,
+            "Height": 240,
+            "FileNameFirst": "background_01.png",
+            "FileNameLast": "background_05.png",
+            "UpdateTicksInterval": 250,
+            "StartOnLoad": true,
+            "LoopEnabled": true
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Y": 159,
+            "Width": 321,
+            "Height": 81,
+            "RelativeFilename": "foldimg.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "X": 3,
+            "Y": 179,
+            "Width": 80,
+            "Height": 25,
+            "RelativeFilename": "HomePage\\Temp_img.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image3",
+            "X": 6,
+            "Y": 211,
+            "Width": 77,
+            "Height": 25,
+            "RelativeFilename": "HomePage\\humidity_img.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textTemp",
+            "X": 31,
+            "Y": 180,
+            "Width": 60,
+            "Height": 23,
+            "TextId": "extTemp",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_CZ3Z",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textHumidity",
+            "X": 31,
+            "Y": 212,
+            "Width": 50,
+            "Height": 23,
+            "TextId": "extHumidity",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_1NOT",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textSystemClock",
+            "X": 3,
+            "Y": 89,
+            "Width": 137,
+            "Height": 59,
+            "TextId": "systemClock",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_RWJA",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_KDU8",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textClockSecond",
+            "X": 144,
+            "Y": 110,
+            "Width": 33,
+            "Height": 36,
+            "TextId": "ClockSecond",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 47,
+              "Green": 241,
+              "Blue": 247
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_ADBO",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "toggleButton5",
+            "X": 265,
+            "Y": 185,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "Controls\\right_page_click.png",
+            "Released": "Controls\\right_page.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "toggleButton4",
+            "X": 205,
+            "Y": 186,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "Controls\\left_page_click.png",
+            "Released": "Controls\\left_page.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textSystemYear",
+            "X": 9,
+            "Y": 13,
+            "Width": 68,
+            "Height": 29,
+            "TextId": "systemYear",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 58,
+              "Green": 230,
+              "Blue": 242
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_BGCO",
+              "UseBuffer": true,
+              "BufferSize": 5
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textSystemDate",
+            "X": 79,
+            "Y": 13,
+            "Width": 68,
+            "Height": 29,
+            "TextId": "__SingleUse_X915",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 58,
+              "Green": 230,
+              "Blue": 242
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_469A",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_DIBA",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textWeekDay",
+            "X": 10,
+            "Y": 49,
+            "Width": 51,
+            "Height": 25,
+            "TextId": "__SingleUse_7EKT",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 191,
+              "Green": 148,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_IBLE",
+              "UseBuffer": true,
+              "BufferSize": 2
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction4",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "toggleButton4"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ApplicationPage"
+            }
+          },
+          {
+            "InteractionName": "Interaction5",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "toggleButton5"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HeartRatePage"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "FiveKeyPage",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "FiveKeyBackground",
+            "Width": 320,
+            "Height": 240,
+            "RelativeFilename": "FiveKeyPage\\FiveKeyPage_background-240x320.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "BackPrevious",
+            "X": 265,
+            "Y": 186,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "Controls\\right_page_click.png",
+            "Released": "Controls\\right_page.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "BackHomePage",
+            "X": 1,
+            "Y": 186,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "Controls\\menu_icon_pressed.png",
+            "Released": "Controls\\menu_icon.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "FiveKeyImage",
+            "X": 60,
+            "Y": 28,
+            "Width": 200,
+            "Height": 200,
+            "RelativeFilename": "FiveKeyPage\\Five_KeyNoPpress-200x200.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textFiveKeyVal",
+            "X": 126,
+            "Y": 5,
+            "Width": 70,
+            "Height": 23,
+            "TextId": "fiveKeyVal",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_IOJ7",
+              "UseBuffer": true,
+              "BufferSize": 2
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_KXPN",
+              "UseBuffer": true,
+              "BufferSize": 5
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "BackHomePage"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HomePage"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "BackPrevious"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ApplicationPage"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "SixAxisPage",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 320,
+            "Height": 240,
+            "RelativeFilename": "SixAxisPage\\SixAxisPage_background-240x320.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "toggleButton2",
+            "X": 265,
+            "Y": 186,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "Controls\\right_page_click.png",
+            "Released": "Controls\\right_page.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "toggleButton1",
+            "X": 1,
+            "Y": 186,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "Controls\\menu_icon_pressed.png",
+            "Released": "Controls\\menu_icon.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "Width": 288,
+            "Height": 240,
+            "RelativeFilename": "SixAxisPage\\EulerAngle-288x240.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaYaw",
+            "X": 114,
+            "Y": 7,
+            "Width": 80,
+            "Height": 23,
+            "TextId": "EulerAngle",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_BLZX",
+              "UseBuffer": true,
+              "BufferSize": 7
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaPitch",
+            "X": 240,
+            "Y": 62,
+            "Width": 80,
+            "Height": 23,
+            "TextId": "EulerAngle",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_LSCF",
+              "UseBuffer": true,
+              "BufferSize": 7
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaRoll",
+            "X": 183,
+            "Y": 213,
+            "Width": 80,
+            "Height": 23,
+            "TextId": "EulerAngle",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_25AA",
+              "UseBuffer": true,
+              "BufferSize": 7
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "toggleButton1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HomePage"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "toggleButton2"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ApplicationPage"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "ApplicationPage",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "AppBackground",
+            "Width": 321,
+            "Height": 240,
+            "RelativeFilename": "ApplicationPage\\ApplicationPageBackground.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "WirelessConnection",
+            "X": 179,
+            "Y": 9,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "Controls\\Wifi_img_click.png",
+            "Released": "Controls\\Wifi_img.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image3",
+            "X": 6,
+            "Y": 93,
+            "Width": 54,
+            "Height": 54,
+            "RelativeFilename": "ApplicationPage\\lux_img.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "X": 93,
+            "Y": 6,
+            "Width": 54,
+            "Height": 61,
+            "RelativeFilename": "ApplicationPage\\voltage_img.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 6,
+            "Y": 5,
+            "Width": 54,
+            "Height": 62,
+            "RelativeFilename": "ApplicationPage\\current_img.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "SettingButton",
+            "X": 261,
+            "Y": 9,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "Controls\\setting_button_click.png",
+            "Released": "Controls\\setting_button.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "SixAxisButton",
+            "X": 93,
+            "Y": 186,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "Controls\\six_axis_click.png",
+            "Released": "Controls\\six_axis.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "FiveKeyButton",
+            "X": 179,
+            "Y": 93,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "Controls\\five_key_click.png",
+            "Released": "Controls\\five_key.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "Back2HomeButton",
+            "X": 261,
+            "Y": 186,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "Controls\\right_page_click.png",
+            "Released": "Controls\\right_page.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "openMotor",
+            "X": 93,
+            "Y": 93,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "ApplicationPage\\vibrate_button_click.png",
+            "Released": "ApplicationPage\\vibrate_button.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "flameMonitor",
+            "X": 6,
+            "Y": 186,
+            "Width": 54,
+            "Height": 54,
+            "RelativeFilename": "ApplicationPage\\flame_no_fire_54x54.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textCurrent",
+            "X": 3,
+            "Y": 65,
+            "Width": 60,
+            "Height": 23,
+            "TextId": "extCurrent",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_GCSD",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textVoltage",
+            "X": 90,
+            "Y": 65,
+            "Width": 60,
+            "Height": 23,
+            "TextId": "extVoltage",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_Z8QM",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "jumpHeartRate",
+            "X": 261,
+            "Y": 93,
+            "Width": 55,
+            "Height": 54,
+            "Pressed": "ApplicationPage\\HeartRate_pressed__54x55.png",
+            "Released": "ApplicationPage\\HeartRate_54x55.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textALS",
+            "X": 2,
+            "Y": 149,
+            "Width": 80,
+            "Height": 23,
+            "TextId": "extLight",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 247,
+              "Blue": 247
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_JHQ3",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "ModalWindow",
+            "Name": "modalHeartRate",
+            "Width": 320,
+            "Height": 240,
+            "Visible": false,
+            "FileName": "ApplicationPage\\modalHeartRate_background.png",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "ModalX": 19,
+            "ModalY": 20,
+            "ModalWidth": 283,
+            "ModalHeight": 200,
+            "Alpha": 150,
+            "Components": [
+              {
+                "Type": "Button",
+                "Name": "measureHeartRate",
+                "X": 193,
+                "Y": 113,
+                "Width": 80,
+                "Height": 80,
+                "Pressed": "ApplicationPage\\HeartRate_end_80x80.png",
+                "Released": "ApplicationPage\\HeartRate_start_80x80.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textPulse",
+                "X": 51,
+                "Y": 62,
+                "Width": 60,
+                "Height": 23,
+                "TextId": "extPulse",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_XI1E",
+                  "UseBuffer": true,
+                  "BufferSize": 4
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textSPOZ",
+                "X": 224,
+                "Y": 62,
+                "Width": 40,
+                "Height": 23,
+                "TextId": "extSPOZ",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_DJZG",
+                  "UseBuffer": true,
+                  "BufferSize": 4
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textInfo",
+                "X": 51,
+                "Y": 100,
+                "Width": 170,
+                "Height": 23,
+                "TextId": "textInfo1",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "Button",
+                "Name": "closedHeartRateModal",
+                "X": 5,
+                "Y": 6,
+                "Width": 36,
+                "Height": 36,
+                "Pressed": "Controls\\closedModalWiFi_Pressed_36x36.png",
+                "Released": "Controls\\closedModalWiFi_36x36.png"
+              }
+            ]
+          },
+          {
+            "Type": "ModalWindow",
+            "Name": "WiFiModalLink",
+            "Width": 320,
+            "Height": 240,
+            "Visible": false,
+            "FileName": "HomePage\\modalWiFi_background.png",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "ModalX": 19,
+            "ModalY": 20,
+            "ModalWidth": 283,
+            "ModalHeight": 200,
+            "Alpha": 150,
+            "Components": [
+              {
+                "Type": "Button",
+                "Name": "ConnectWiFi",
+                "X": 229,
+                "Y": 3,
+                "Width": 49,
+                "Height": 36,
+                "Pressed": "Controls\\wifiLink-36x49_pressed.png",
+                "Released": "Controls\\wifiLink-36x49.png"
+              },
+              {
+                "Type": "Button",
+                "Name": "CloseWiFiModal",
+                "X": 9,
+                "Y": 3,
+                "Width": 36,
+                "Height": 36,
+                "Pressed": "Controls\\closedModalWiFi_Pressed_36x36.png",
+                "Released": "Controls\\closedModalWiFi_36x36.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textWiFiLinkInfo",
+                "X": 6,
+                "Y": 49,
+                "Width": 268,
+                "Height": 144,
+                "TextId": "wifiLinkInfo",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_2ZHZ",
+                  "UseBuffer": true,
+                  "BufferSize": 200
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Back2HomePage",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Back2HomeButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HomePage"
+            }
+          },
+          {
+            "InteractionName": "turnMotor",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "openMotor"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "turnMotor"
+            }
+          },
+          {
+            "InteractionName": "openModalHeartRate",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "jumpHeartRate"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "openModalHeartRate"
+            }
+          },
+          {
+            "InteractionName": "closedModalHeartRate",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "closedHeartRateModal"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "closedModalHeartRate"
+            }
+          },
+          {
+            "InteractionName": "beginHeartRate",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "measureHeartRate"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "beginHeartRate"
+            }
+          },
+          {
+            "InteractionName": "FiveKeyObserve",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "FiveKeyButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "FiveKeyPage"
+            }
+          },
+          {
+            "InteractionName": "OpenWifiModeLink",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "WirelessConnection"
+            },
+            "Action": {
+              "Type": "ActionShow",
+              "ActionComponent": "WiFiModalLink"
+            }
+          },
+          {
+            "InteractionName": "CloseWifiModeLink",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "CloseWiFiModal"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "WiFiModalLink"
+            }
+          },
+          {
+            "InteractionName": "SixAxisObserve",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "SixAxisButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "SixAxisPage"
+            }
+          },
+          {
+            "InteractionName": "connectWiFi",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "ConnectWiFi"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "connectWiFi"
+            }
+          },
+          {
+            "InteractionName": "SettingMode",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "SettingButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "SettingPage"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "SettingPage",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 320,
+            "Height": 240,
+            "RelativeFilename": "SettingPage\\SettingPage_Background.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "toggleButton1",
+            "X": 265,
+            "Y": 186,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "Controls\\right_page_click.png",
+            "Released": "Controls\\right_page.png"
+          },
+          {
+            "Type": "Slider",
+            "Name": "sliderScreenBacklight",
+            "X": 4,
+            "Y": 201,
+            "Width": 222,
+            "Height": 24,
+            "IsHorizontalSlider": true,
+            "BackgroundUnselected": "SettingPage\\alternate_theme_images_widgets_slider_horizontal_thin_track_small.png",
+            "BackgroundSelected": "SettingPage\\alternate_theme_images_widgets_slider_horizontal_thin_filler_small.png",
+            "Indicator": "SettingPage\\alternate_theme_images_widgets_slider_horizontal_thin_rounded_light.png",
+            "BackgroundX": 16,
+            "BackgroundY": 11,
+            "IndicatorMax": 198,
+            "ValueMax": 100,
+            "ValueMin": 5,
+            "InitValue": 50
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textBackLight",
+            "X": 173,
+            "Y": 166,
+            "Width": 30,
+            "Height": 23,
+            "TextId": "backLight",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_M1OD",
+              "UseBuffer": true,
+              "BufferSize": 4
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textChipTemp",
+            "X": 81,
+            "Y": 92,
+            "Width": 40,
+            "Height": 23,
+            "TextId": "chipTemp",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_H89Z",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textChipVref",
+            "X": 175,
+            "Y": 92,
+            "Width": 50,
+            "Height": 23,
+            "TextId": "chipVref",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_7TKU",
+              "UseBuffer": true,
+              "BufferSize": 2
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_71NJ",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textChipVbat",
+            "X": 266,
+            "Y": 92,
+            "Width": 50,
+            "Height": 23,
+            "TextId": "chipVbat",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_NKAO",
+              "UseBuffer": true,
+              "BufferSize": 2
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_8KMQ",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "toggleButton1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ApplicationPage"
+            }
+          },
+          {
+            "InteractionName": "sliderInteraction",
+            "Trigger": {
+              "Type": "TriggerSliderValueChanged",
+              "TriggerComponent": "sliderScreenBacklight"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "newBacklightValueHandler"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "HeartRatePage",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "heartrate_background",
+            "Width": 320,
+            "Height": 240,
+            "RelativeFilename": "HeartRatePage\\heartrate_page_background.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "heartrate_page_measure",
+            "X": 70,
+            "Y": 30,
+            "Width": 180,
+            "Height": 180,
+            "Pressed": "HeartRatePage\\heartrate_page_click.png",
+            "Released": "HeartRatePage\\heartrate_page.png"
+          },
+          {
+            "Type": "ModalWindow",
+            "Name": "modalHeartRate",
+            "Width": 320,
+            "Height": 240,
+            "Visible": false,
+            "FileName": "ApplicationPage\\modalHeartRate_background.png",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "ModalX": 19,
+            "ModalY": 20,
+            "ModalWidth": 283,
+            "ModalHeight": 200,
+            "Alpha": 150,
+            "Components": [
+              {
+                "Type": "Button",
+                "Name": "measureHeartRate",
+                "X": 193,
+                "Y": 113,
+                "Width": 80,
+                "Height": 80,
+                "Pressed": "ApplicationPage\\HeartRate_end_80x80.png",
+                "Released": "ApplicationPage\\HeartRate_start_80x80.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textPulse",
+                "X": 51,
+                "Y": 62,
+                "Width": 60,
+                "Height": 23,
+                "TextId": "extPulse",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_QDV1",
+                  "UseBuffer": true,
+                  "BufferSize": 4
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textSPOZ",
+                "X": 224,
+                "Y": 62,
+                "Width": 40,
+                "Height": 23,
+                "TextId": "extSPOZ",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_1NW0",
+                  "UseBuffer": true,
+                  "BufferSize": 4
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textInfo",
+                "X": 51,
+                "Y": 100,
+                "Width": 170,
+                "Height": 23,
+                "TextId": "textInfo1",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "Button",
+                "Name": "closedHeartRateModal",
+                "X": 5,
+                "Y": 6,
+                "Width": 36,
+                "Height": 36,
+                "Pressed": "Controls\\closedModalWiFi_Pressed_36x36.png",
+                "Released": "Controls\\closedModalWiFi_36x36.png"
+              }
+            ]
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "Back2Home",
+            "Y": 186,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "Controls\\left_page_click.png",
+            "Released": "Controls\\left_page.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "toggleButton1",
+            "X": 265,
+            "Y": 186,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "Controls\\right_page_click.png",
+            "Released": "Controls\\right_page.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "openModalHeartRate",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "heartrate_page_measure"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "openModalHeartRate"
+            }
+          },
+          {
+            "InteractionName": "closedModalHeartRate",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "closedHeartRateModal"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "closedModalHeartRate"
+            }
+          },
+          {
+            "InteractionName": "beginHeartRate",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "measureHeartRate"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "beginHeartRate"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Back2Home"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HomePage"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "toggleButton1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ApplicationPage"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 320,
+      "Height": 240
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "HomePage",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 320,
+        "Height": 240
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32U5",
+    "SubFamily": "STM32U575/585",
+    "Toolchain": "MDK-ARM V5.32",
+    "Platform": "m33",
+    "ProjectFile": "../Total_demo.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": []
+  },
+  "Version": "4.21.2"
+}

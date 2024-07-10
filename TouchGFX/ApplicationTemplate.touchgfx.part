@@ -1,0 +1,30 @@
+
+{
+  "Application": {
+    "Name": "Total_demo",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "AvailableColorDepths": [ 16 ],
+    "AvailableLCDs":
+    {
+      "16": "LCD16bpp"
+    },
+    "AvailableResolutions": [
+      {
+        "Width": 320,
+        "Height": 240
+      }
+    ],
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "Family": "STM32U5",
+    "SubFamily": "STM32U575/585",
+    "Platform": "m33",
+    "Toolchain": "MDK-ARM V5.32",
+    "ProjectFile": "../Total_demo.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [
+    ],
+    "AdditionalFeatures": [
+    ],
+  },
+  "Version": "4.21.2"
+}
